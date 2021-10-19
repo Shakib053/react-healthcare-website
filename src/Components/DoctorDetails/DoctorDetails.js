@@ -15,12 +15,13 @@ const DoctorDetails = () => {
     return (
         <div className="text-center card">
 
-            <h1>Details of the Product</h1>
+            <h1 className="my-4">Details of the Doctors</h1>
             <img src={ExactData[0]?.img} className="card-img-top w-75 mx-auto" alt="" srcset="" />
             <br />
             <div className="card-body">
                 <h5 className="card-title">{ExactData[0]?.name}</h5>
-                <p className="card-text">{ExactData[0]?.special}.</p>
+                <h5 className="card-title">Age : {ExactData[0]?.age}</h5>
+                <p className="card-text">Expertise Area : <strong>{ExactData[0]?.special}.</strong></p>
                 <p className="card-text">Experiences in this area:  <strong>{ExactData[0]?.exp}</strong></p>
             </div>
 

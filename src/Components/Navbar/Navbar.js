@@ -59,7 +59,7 @@ const Navbar = () => {
                             user?.email ? <button onClick={logOut} className="btn btn-primary ms-2" >Log Out</button>
                                 :
                                 <Link to='/login'>
-                                    <button className="btn btn-warning me-2" >Log In</button>
+                                    <button className="btn btn-warning" >Log In</button>
                                 </Link>
                         }
 

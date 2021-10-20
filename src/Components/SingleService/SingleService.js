@@ -11,8 +11,8 @@ const SingleService = (props) => {
                     <h3 className="card-title text-center my-3">{name}</h3>
                     <p className="card-text">{des}</p>
                 </div>
-                <Link to={`/serviceDetails/${id}`}>
-                    <button className="w-25 btn btn-warning text-center">Learn More</button>
+                <Link className=" mx-auto" to={`/serviceDetails/${id}`}>
+                    <button className="w-100 btn btn-warning text-center">Learn More</button>
                 </Link>
             </div>
         </div>

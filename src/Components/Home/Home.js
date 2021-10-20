@@ -11,7 +11,7 @@ const Home = () => {
             .then(data => setService(data));
     }, [])
     return (
-        <div>
+        <div className="container">
             <div className="container-fluid ">
                 <img src={image} style={{ width: "100%", padding: "50px 50px" }} alt="" srcset="" />
                 <h1 className="text-center pt-5">Welcome to <span className="text-uppercase text-warning">healthcare agency</span></h1>

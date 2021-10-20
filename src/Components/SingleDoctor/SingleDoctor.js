@@ -9,10 +9,10 @@ const SingleDoctor = (props) => {
                 <img src={img} className="card-img-top w-75 mx-auto" alt="" srcset="" />
                 <div class="card-body">
                     <h3 className="card-title text-center my-3">{name}</h3>
-                    <p className="card-text">{special}</p>
+                    <p className="card-text text-center"><strong>{special}</strong></p>
                 </div>
-                <Link to={`/doctordetails/${id}`}>
-                    <button className="w-25 btn btn-warning text-center">Learn More</button>
+                <Link className="mx-auto" to={`/doctordetails/${id}`}>
+                    <button className="w-100 btn btn-warning text-center">Learn More</button>
                 </Link>
             </div>
         </div>

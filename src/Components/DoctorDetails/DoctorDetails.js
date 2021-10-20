@@ -15,7 +15,7 @@ const DoctorDetails = () => {
     return (
         <div className="text-center card">
 
-            <h1 className="my-4">Details of the Doctors</h1>
+            <h1 className="my-4">Details of the Doctor</h1>
             <img src={ExactData[0]?.img} className="card-img-top w-75 mx-auto" alt="" srcset="" />
             <br />
             <div className="card-body">

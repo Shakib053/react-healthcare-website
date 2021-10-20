@@ -1,0 +1,6 @@
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: rgb(88, 88, 202);
+}

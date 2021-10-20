@@ -16,12 +16,12 @@ const useFirebase = () => {
 
 
     const signInWithGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
-                setUser(result.user);
-            }).catch((error) => {
-                setError(error.message)
-            });
+        return signInWithPopup(auth, googleProvider)
+        // .then((result) => {
+        //     setUser(result.user);
+        // }).catch((error) => {
+        //     setError(error.message)
+        // });
     };
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {

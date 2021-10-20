@@ -3,6 +3,7 @@ import useAuth from '../../hooks/useAuth';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile } from "firebase/auth";
 import initializeAuthentication from '../../firebase/firebase.init';
 import Home from '../Home/Home';
+import { useHistory, useLocation } from 'react-router';
 
 
 initializeAuthentication();
@@ -17,6 +18,16 @@ const Login = () => {
     const { signInWithGoogle } = useAuth();
 
     const [isLogin, setIsLogin] = useState(false);
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
+
+    const handleGoogleLogin = () => {
+        signInWithGoogle()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+    }
 
 
     const handleNameChange = e => {
@@ -61,6 +72,7 @@ const Login = () => {
                 // console.log(userCredential.user);
                 setError('');
                 setUserName();
+                history.push(redirect_uri);
                 // ...
             })
             .catch((error) => {
@@ -131,7 +143,7 @@ const Login = () => {
                 </button>
 
             </form>
-            <button className="btn btn-primary my-4" onClick={signInWithGoogle}>Google Sign-In</button>
+            <button className="btn btn-primary my-4" onClick={handleGoogleLogin}>Google Sign-In</button>
         </div>
     );
 };

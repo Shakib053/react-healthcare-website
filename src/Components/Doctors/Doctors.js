@@ -14,7 +14,7 @@ const Doctors = () => {
         <div className="container">
             <div className="row row-cols-1 row-cols-md-2 g-4">
                 {
-                    doctors.map(sd => <SingleDoctor sd={sd}></SingleDoctor>)
+                    doctors.map(sd => <SingleDoctor key={sd.id} sd={sd}></SingleDoctor>)
                 }
             </div>
         </div>

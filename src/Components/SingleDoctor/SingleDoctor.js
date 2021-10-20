@@ -12,7 +12,7 @@ const SingleDoctor = (props) => {
                     <p className="card-text text-center"><strong>{special}</strong></p>
                 </div>
                 <Link className="mx-auto" to={`/doctordetails/${id}`}>
-                    <button className="w-100 btn btn-warning text-center">Learn More</button>
+                    <button className="w-100 btn btn-warning text-center"> Book an Appoinment?</button>
                 </Link>
             </div>
         </div>

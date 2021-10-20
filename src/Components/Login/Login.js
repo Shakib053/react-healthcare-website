@@ -91,6 +91,7 @@ const Login = () => {
                 setError('');
                 // verifyEmail();
                 setUserName();
+                history.push(redirect_uri);
 
                 // ...
             })

@@ -27,22 +27,22 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <Link to='/home'>
+                        <Link className="navlink" to='/home'>
                             <li className="nav-item mx-3" >
                                 <a className="nav-link text-black" style={{ fontSize: "1.3rem" }} aria-current="page" href="#">Home</a>
                             </li>
                         </Link>
-                        <Link to='/about'>
+                        <Link className="navlink" to='/about'>
                             <li className="nav-item mx-3">
                                 <a className="nav-link text-black" style={{ fontSize: "1.3rem" }} href="#">About Us</a>
                             </li>
                         </Link>
-                        <Link to='/doctors'>
+                        <Link className="navlink" to='/doctors'>
                             <li className="nav-item mx-3">
                                 <a className="nav-link text-black" style={{ fontSize: "1.3rem" }} href="#">Doctors</a>
                             </li>
                         </Link>
-                        <Link to='/contactus'>
+                        <Link className="navlink" to='/contactus'>
                             <li className="nav-item mx-3">
                                 <a className="nav-link text-black" style={{ fontSize: "1.3rem" }} href="#">Contact Us</a>
                             </li>

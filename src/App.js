@@ -20,6 +20,7 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
 import Doctors from './Components/Doctors/Doctors';
 import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
+import Publications from './Components/Publications/Publications';
 
 function App() {
   return (
@@ -50,6 +51,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path="/doctorDetails/:id">
             <DoctorDetails></DoctorDetails>
+          </PrivateRoute>
+          <PrivateRoute path='/publications'>
+            <Publications></Publications>
           </PrivateRoute>
 
           <Route exact='*'>

@@ -17,7 +17,7 @@ const Footer = () => {
                             <Link to='/about'><h6 className="text-black my-3">About HCA</h6></Link>
                             <Link to='/doctors'><h6 className="text-black my-3">Privacy Policy</h6></Link>
                             <Link to=''><h6 className="text-black my-3">Terms & Conditions</h6></Link>
-                            <Link to='/'><h6 className="text-black">Refund Policy</h6></Link>
+                            <Link to='/publications'><h6 className="text-black">Our Publications</h6></Link>
                         </div>
                     </div>
                 </div>

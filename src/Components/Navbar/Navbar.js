@@ -18,7 +18,7 @@ const Navbar = () => {
                         <img src={Logo} style={{ width: "50px", borderRadius: "50%", marginRight: "20px" }} alt="" srcset="" />
                     </div>
                     <div>
-                        <h4 className="text-uppercase">Healthcare <span className="text-warning"> agency</span></h4>
+                 <Link to="/home"><h4 className="text-uppercase text-black">Healthcare <span className="text-warning"> agency</span></h4></Link>
                     </div>
                 </div>
 
